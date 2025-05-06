@@ -1,0 +1,19 @@
+stages:
+  - build
+  - deploy
+
+build:
+  image: python:3.9
+  stage: build
+  before_script:
+    - pip install -r requirements.txt
+  script:
+    - docker build -t calculator-app .
+
+deploy:
+  image: nginx:latest
+  stage: deploy
+  script:
+    - docker-compose up -d
+  only:
+    - master
