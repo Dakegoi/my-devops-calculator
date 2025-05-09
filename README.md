@@ -56,6 +56,9 @@ calculator_app — Flask backend (internal port 5006)
 nginx — Nginx reverse proxy (external port 81)
 Nginx will forward all HTTP requests from localhost:81 to the Flask app.
 
+<img width="1470" alt="Снимок экрана 2025-05-09 в 19 15 27" src="https://github.com/user-attachments/assets/be3cc807-5e2c-47e5-97ca-e06607ad4e8b" />
+
+
 
 
 
